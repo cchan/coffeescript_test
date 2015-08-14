@@ -1,0 +1,22 @@
+{
+  "name": "coffeescript_test",
+  "version": "0.0.1",
+  "description": "Poking around CoffeeScript in the interest of eventually creating a scibowl community question, answer, training, management application. Based on http://www.marcusoft.net/2015/03/node-with-coffeescript---not-a-piece-of-cake.html",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "mocha -w --compilers coffee:coffee-script/register",
+    "start": "nodemon --ignore test/",
+    "//": "https://cozy.io/en/hack/cookbooks/nodemon-server-auto-refresh-on-change.html"
+  },
+  "author": "Clive Chan (http://clive.io)",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^7.0.4"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "nodemon": "^1.4.1",
+    "socket.io": "^1.3.6"
+  }
+}
